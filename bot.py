@@ -6,7 +6,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # ==== SETTINGS ====
-BOT_TOKEN = "8299033526:AAH38ZmbJASl_aXTlsD2Whvem86pcxnV9nA"
+import os
+BOT_TOKEN = os.getenv("8299033526:AAH38ZmbJASl_aXTlsD2Whvem86pcxnV9nA")
 
 CHANNELS = [
     -1003363555359,    # Channel 1 ID
@@ -77,3 +78,4 @@ def main():
     app.run_polling()
 
 main()
+
