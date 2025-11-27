@@ -1,12 +1,12 @@
 # -------------------------
 # NORMAL VERSION BOT (PTB v20)
 # -------------------------
-
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # ==== SETTINGS ====
-import os
+
 BOT_TOKEN = os.getenv("8299033526:AAH38ZmbJASl_aXTlsD2Whvem86pcxnV9nA")
 
 CHANNELS = [
@@ -78,4 +78,5 @@ def main():
     app.run_polling()
 
 main()
+
 
